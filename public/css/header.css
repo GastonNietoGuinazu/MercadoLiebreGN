@@ -1,0 +1,106 @@
+header {
+    background-color: var(--amarillo);
+    padding-bottom: 10px;
+}
+
+.logo {
+    width: 50%;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    padding-top: 1em;
+}
+
+.barra {
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.PrimerTitulo {
+    margin-bottom: 1em;
+}
+
+.menu {
+    display: none;
+}
+
+.menu-h {
+    color: white;
+    background-color: var(--Celeste);
+    font-size: 25px;
+    max-width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 10%;
+    margin: auto;
+}
+
+.lupa {
+    background-color: white;
+    display: inline;
+}
+
+@media (min-width:426px) {
+
+    .encabezado {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        width: 30%;
+        flex-grow: 0.30;
+       
+    }
+
+    .barra{
+        width: 30%;
+        flex-grow: 0.40;
+    }
+
+    .PrimerTitulo {
+        width: 30%;
+        flex-grow: 0.30;
+        margin-right: 1em;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+    }
+    .columnaIzquierda{
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+    }
+    .columnaDerecha {
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+    }
+    .menu-h {
+        display: none;
+    }
+
+    .section {
+        display: flex; 
+        flex-wrap: wrap;
+    }
+
+    article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .descrip {
+        display: block;
+    }
+    .producto {
+        width: 45%;
+    }
+}
+
+/*PC*/
+
+@media (min-width:769px) {
+    .producto {
+        width: 23%;
+    }
+}

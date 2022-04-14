@@ -46,7 +46,6 @@ section {
 }
 
 .Ofertas {
-    /*max-width: 800px;*/
     background-color: white;
     position: relative;
     padding: 15px;
@@ -117,6 +116,18 @@ footer {
     margin-top: 10px;
 }
 
+.enviar-login:hover {
+    color: #0022AA;
+}
+
+.producto:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.producto:hover .descrip {
+    display: block;
+}
+
 /*Login*/
 
 .mainLogin {
@@ -169,16 +180,19 @@ footer {
         display: flex;
         justify-content: space-between;
     }
+
     .columnaIzquierda{
         display: flex;
         justify-content: space-around;
         width: 40%;
     }
+
     .columnaDerecha {
         display: flex;
         justify-content: space-around;
         width: 40%;
     }
+
     .menu-h {
         display: none;
     }
@@ -188,15 +202,10 @@ footer {
         flex-wrap: wrap;
     }
 
-    article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    .descrip {
-        display: block;
-    }
     .producto {
         width: 45%;
     }
+
     .iconosBlue:hover {
         color: var(--Verde);
     }
@@ -205,6 +214,7 @@ footer {
 /*Desktop*/
 
 @media (min-width:769px) {
+
     .producto {
         width: 22%;
     }
@@ -214,7 +224,13 @@ footer {
        padding-top: 1em;
        padding-bottom: 1em;
     }
+
     .elementoFooter {
         width: 25%;
+    }
+
+    .barra {
+        display: flex;
+        justify-content: center;
     }
 }

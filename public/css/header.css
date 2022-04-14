@@ -86,12 +86,10 @@ header {
         flex-wrap: wrap;
     }
 
-    article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
     .descrip {
         display: block;
     }
+    
     .producto {
         width: 45%;
     }

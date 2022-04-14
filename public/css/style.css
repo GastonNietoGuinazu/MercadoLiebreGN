@@ -197,12 +197,24 @@ footer {
     .producto {
         width: 45%;
     }
+    .iconosBlue:hover {
+        color: var(--Verde);
+    }
 }
 
-/*PC*/
+/*Desktop*/
 
 @media (min-width:769px) {
     .producto {
         width: 22%;
+    }
+    .footer {
+        display: flex;
+       justify-content: space-evenly;
+       padding-top: 1em;
+       padding-bottom: 1em;
+    }
+    .elementoFooter {
+        width: 25%;
     }
 }
